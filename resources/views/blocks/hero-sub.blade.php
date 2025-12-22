@@ -15,7 +15,7 @@ $backgroundImage = !empty($g_hero_sub['image']['url']) ? "linear-gradient(90deg,
 
 		<div class="__content w-full sm:w-3/4 relative z-10">
 			
-			<h1 data-gsap-element="header" class="text-white m-header">{{ $g_hero_sub['header'] }}</h1>
+			<h1 data-gsap-element="header" class="text-white m-header">{!! $g_hero_sub['header'] !!}</h1>
 
 			<div data-gsap-element="text" class="text-white text-xl">{{ strip_tags($g_hero_sub['text']) }}</div>
 

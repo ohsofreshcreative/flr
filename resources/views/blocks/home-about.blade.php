@@ -27,7 +27,7 @@ $sectionClass .= $brandbg ? ' section-brand' : '';
 
 		<div class="__content order2">
 
-			<div class="bg-primary px-14 py-14">
+			<div class="pr-0 md:pr-20">
 				<p data-gsap-element="subtitle" class="__subtitle subtitle-s">{{ $g_about['subtitle'] }}</p>
 				<h2 data-gsap-element="header" class="text-white">{{ $g_about['header'] }}</h2>
 
