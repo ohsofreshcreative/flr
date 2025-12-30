@@ -1364,6 +1364,19 @@ article.post:hover img {
 
 /*--- !CHECKOUT ---*/
 
+/* sam select */
+.woocommerce-input-wrapper select {
+    color: #000;          /* kolor tekstu */
+    background-color: #fff;
+}
+
+/* opcje w dropdownie (ważne dla Windows) */
+.woocommerce-input-wrapper select option {
+    color: #000;
+    background-color: #fff;
+}
+ 
+
 #payment>ul>li.wc_payment_method.payment_method_payulistbanks>label>img,
 #payment>ul>li.wc_payment_method.payment_method_payucreditcard>label>img {
 	filter: invert(1) grayscale(1);
