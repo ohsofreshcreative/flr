@@ -51,8 +51,6 @@ ul. Paprociowa 13<br>
  * @hooked WC_Structured_Data::output_structured_data() Outputs structured data.
  * @since 2.5.0
  */
-do_action( 'woocommerce_email_order_details', $order, $sent_to_admin, $plain_text, $email );
-
 /*
  * @hooked WC_Emails::order_meta() Shows order meta data.
  */
