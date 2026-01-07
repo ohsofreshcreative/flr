@@ -12,7 +12,7 @@ $sectionClass .= ' ' . $background;
 
 <!--- reach -->
 
-<section data-gsap-anim="section" @if(!empty($section_id)) id="{{ $section_id }}" @endif class="b-reach relative section-py -smt {{ $sectionClass }}" style="background-image: linear-gradient(to right, rgba(0, 28, 71, 0.5) 0%, rgba(0, 28, 71, 1.0) 40%, rgba(0, 28, 71, 1.0) 100%), url('{{ $g_reach_1['image']['url'] }}'); background-size: cover; background-position: center;">
+<section data-gsap-anim="section" @if(!empty($section_id)) id="{{ $section_id }}" @endif class="b-reach relative section-py -smt {{ $sectionClass }}" style="background-image: linear-gradient(to right, rgba(35, 3, 8, 0.5) 0%, rgba(35, 3, 8, 1.0) 40%, rgba(35, 3, 8, 1.0) 100%), url('{{ $g_reach_1['image']['url'] }}'); background-size: cover; background-position: center;">
 
 	<div class="__wrapper c-main relative z-2">
 

@@ -32,7 +32,7 @@ $sectionClass .= $brandbg ? ' section-brand' : '';
 
 			<div data-gsap-element="stagger" class="grid {{ $gridClass }} gap-8 mt-14">
 				@foreach ($g_cards['r_cards'] as $item)
-				<div class="__card relative bg-secondary b-shadow p-8">
+				<div class="__card relative bg-brand b-shadow p-8">
 					<img class="mb-6" src="{{ $item['image']['url'] }}" alt="{{ $item['image']['alt'] ?? '' }}" />
 					<h6 class="m-title text-white">{{ $item['header'] }}</h6>
 					<p class="text-white">{{ $item['text'] }}</p>

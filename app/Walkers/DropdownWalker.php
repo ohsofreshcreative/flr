@@ -45,9 +45,9 @@ class DropdownWalker extends Walker_Nav_Menu
 
             $link_classes = '';
             if ($depth > 0) {
-                $link_classes = 'block px-6 py-4 text-sm text-gray-700 hover:bg-blue-600';
+                $link_classes = 'block px-6 py-4 text-sm text-gray-700 hover:bg-red-800';
             } else {
-                $link_classes = 'text-sm font-medium hover:text-indigo-600';
+                $link_classes = 'text-sm font-medium hover:text-red-800';
             }
 
             $output .= '<a href="' . esc_attr($item->url) . '" class="' . esc_attr($link_classes) . '">';
