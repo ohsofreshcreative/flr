@@ -17,7 +17,7 @@ $backgroundImage = !empty($g_hero_sub['image']['url']) ? "linear-gradient(90deg,
 			
 			<h1 data-gsap-element="header" class="text-white m-header">{!! $g_hero_sub['header'] !!}</h1>
 
-			<div data-gsap-element="text" class="text-white text-xl">{{ strip_tags($g_hero_sub['text']) }}</div>
+			<div data-gsap-element="text" class="text-white text-xl">{!! strip_tags($g_hero_sub['text']) !!}</div>
 
 			@if (!empty($g_hero_sub['button1']))
 			<div class="inline-buttons m-btn">
