@@ -36,12 +36,7 @@ ul. Paprociowa 13<br>
 38 1140 2017 0000 4202 1271 3659<br>
 <b>tytuł:</b><br> imię i nazwisko uczestnika – konferencja FLR 2026.</p><br>
 
-<p>Wysokość opłat znajdziesz tutaj: <a href="https://flr.com.pl/oplata-konferencyjna/">Opłata konferencyjna</a></p><br>
-
-<p>Prosimy o sprawdzenie, czy dane zawarte w formularzu są poprawne.</p><br>
-<p>W przypadku zauważonych błędów prosimy o dokonanie ponownej rejestracji na konferencję.</p><br>
-
-<p>W przypadku nieuiszczenia przez uczestnika opłaty w ciągu 7 dni Organizator jest zmuszony skreślić go z listy. Jeśli pomimo to uczestnik wyraża chęć wzięcia udziału w konferencji, konieczna jest ponowna rejestracja i dokonanie wpłaty (według cennika i obowiązującego terminarza znajdującego się w zakładce <a href="https://flr.com.pl/oplata-konferencyjna/">Opłata konferencyjna</a>).</p>
+<b>Prosimy o wpłatę w ciągu 7 dni na nasze konto bankowe, po tym terminie rejestracja zostaje anulowana.</b>
 
 <?php
 
