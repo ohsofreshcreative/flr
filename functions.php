@@ -103,7 +103,7 @@ add_filter('sage/acf-composer/fields', fn () => [
     App\Blocks\ExampleBlock::class,
 ]);
 
-/*--- CHANGE ORDER STATUS ---*/
+/*--- CHANGE ORDER STATUS 
 
 add_action( 'woocommerce_order_status_changed', 'aktualizuj_date_zamowienia_przy_realizacji', 10, 4 );
 
@@ -123,4 +123,4 @@ function aktualizuj_date_zamowienia_przy_realizacji( $order_id, $old_status, $ne
         // KROK 4: Przypinamy funkcję z powrotem (dla kolejnych wywołań w tym samym procesie)
         add_action( 'woocommerce_order_status_changed', 'aktualizuj_date_zamowienia_przy_realizacji', 10, 4 );
     }
-}
+}---*/

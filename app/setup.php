@@ -301,7 +301,7 @@ add_action('template_redirect', function () {
     }
 });
 
-/*--- AUTO COMPLETE PROCESSING ORDERS ---*/
+/*--- AUTO COMPLETE PROCESSING ORDERS 
 
 add_action( 'woocommerce_order_status_changed', 'auto_complete_processing_orders', 10, 4 );
 function auto_complete_processing_orders( $order_id, $old_status, $new_status, $order ) {
@@ -311,3 +311,4 @@ function auto_complete_processing_orders( $order_id, $old_status, $new_status, $
         $order->update_status( 'completed', 'Zamówienie automatycznie oznaczone jako zrealizowane.' );
     }
 }
+---*/
