@@ -36,7 +36,7 @@ ul. Paprociowa 13<br>
 38 1140 2017 0000 4202 1271 3659<br>
 <b>tytuł:</b><br> imię i nazwisko uczestnika – konferencja FLR 2026.</p><br>
 
-<b>Prosimy o wpłatę w ciągu 7 dni na nasze konto bankowe, po tym terminie rejestracja zostaje anulowana.</b>
+<b>Prosimy o wpłatę w ciągu 7 dni na nasze konto bankowe, po tym terminie rejestracja zostaje anulowana.</b><br><br><br>
 
 <?php
 
