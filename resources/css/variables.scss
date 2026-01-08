@@ -1363,6 +1363,9 @@ article.post:hover img {
 		ul li {
 			list-style: disc inside;
 		}
+		.price del {
+			display: none !important;
+		}
 	}
 }
 
