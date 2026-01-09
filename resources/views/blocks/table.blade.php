@@ -22,7 +22,7 @@ $sectionClass .= ' ' . $background;
 			@endif
 
 			<div class="overflow-x-auto">
-				<div class="__table m-auto min-w-[600px]">
+				<div class="__table m-auto min-w-[500px]">
 					@foreach ($g_table['r_table'] as $item)
 					<div class="__row grid grid-cols-[1.5fr_1fr_1fr] gap-10 p-2 b-border-b">
 						<p class="text-white">{{ $item['col1'] }}</p>
