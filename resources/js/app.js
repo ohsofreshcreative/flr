@@ -237,3 +237,23 @@ jQuery(function($) {
     });
 });
 
+
+
+/*--- SMOOTH ANCHOR ---*/
+
+document.addEventListener('DOMContentLoaded', (event) => {
+
+  if (window.location.hash) {
+
+    const targetElement = document.querySelector(window.location.hash);
+
+    if (targetElement) {
+   
+      setTimeout(() => {
+        targetElement.scrollIntoView({
+          behavior: 'smooth' // Płynne przewijanie
+        });
+      }, 100);
+    }
+  }
+});
