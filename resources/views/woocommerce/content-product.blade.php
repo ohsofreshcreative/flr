@@ -7,12 +7,12 @@ $product_about = get_field('product_about', $product->get_id());
 $description = $product->get_description();
 @endphp
 
-<li class="product__card border-left-p bg-dark border-dashed rounded-xl !px-10 !py-14 grid grid-cols-1 lg:grid-cols-[1fr_2fr_2fr] gap-10">
+<li class="product__card border-left-p bg-dark border-dashed rounded-xl !px-10 !py-14 grid grid-cols-1 md:grid-cols-[1fr_2fr_2fr] gap-10">
 
 	<figure class="woocommerce-product-figure relative">
 
 		<a href="{{ get_permalink() }}">
-			<img src="{{ get_the_post_thumbnail_url($product->get_id(), 'large') }}"
+			<img class="object-cover" src="{{ get_the_post_thumbnail_url($product->get_id(), 'large') }}"
 				alt="{{ get_the_title() }}" class="img-m img-xs" />
 		</a>
 	</figure>
@@ -26,8 +26,8 @@ $description = $product->get_description();
 		@endif
 	</div>
 
-	<div class="flex flex-col justify-between b-border-l pl-10">
-		<div class="flex gap-6">
+	<div class="flex flex-col justify-between b-border-l gap-4 pl-6 md:pl-10">
+		<div class="flex flex-col lg:flex-row gap-2 lg:gap-6">
 			@if (!empty($product_about['date']))
 			<div class="text-white flex items-center gap-2"><img src="/wp-content/uploads/2025/11/callendar.svg"/> {{ $product_about['date'] }}</div>
 			@endif
@@ -36,8 +36,6 @@ $description = $product->get_description();
 			@endif
 		</div>
 
-
-		{{-- Column 4: Price & Button --}}
 		<div class="">
 			<div class="price text-2xl text-white">
 				Bilety od:<br> {!! $product->get_price_html() !!}

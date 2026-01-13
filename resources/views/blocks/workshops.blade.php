@@ -25,16 +25,16 @@ $sectionClass .= ' ' . $background;
 				<h2 data-gsap-element="header" class="text-white m-header">{{ $g_workshops['title'] }}</h2>
 			</div>
 
-			<div class="__content flex mt-8">
-				<div data-gsap-element="txt" class="__txt text-white w-full md:w-1/3 b-border-l pl-6">
+			<div class="__content grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8">
+				<div data-gsap-element="txt" class="__txt text-white w-full b-border-l pl-6">
 					{!! $g_workshops['text1'] !!}
 				</div>
-				<div data-gsap-element="txt" class="__txt text-white w-full md:w-1/3 b-border-l pl-6">
+				<div data-gsap-element="txt" class="__txt text-white w-full b-border-l pl-6">
 					{!! $g_workshops['text2'] !!}
 				</div>
 
 				@if (!empty($g_workshops['button']))
-				<a data-gsap-element="btn" class="second-btn ml-auto" href="{{ $g_workshops['button']['url'] }}" target="{{ $g_workshops['button']['target'] }}">{{ $g_workshops['button']['title'] }}</a>
+				<a data-gsap-element="btn" class="second-btn ml-0 lg:ml-auto h-max" href="{{ $g_workshops['button']['url'] }}" target="{{ $g_workshops['button']['target'] }}">{{ $g_workshops['button']['title'] }}</a>
 				@endif
 			</div>
 

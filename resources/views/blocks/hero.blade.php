@@ -38,8 +38,8 @@ $sectionClass .= $flip ? ' order-flip' : '';
 				{!! $g_hero['txt'] !!}
 			</div>
 
-			<div data-gsap-element="info" class="__info flex gap-6 mt-6">
-				<div class="flex items-center gap-2">
+			<div data-gsap-element="info" class="__info flex flex-col md:flex-row gap-6 mt-6">
+				<div class="flex gap-2">
 					<div>
 						<img src="/wp-content/uploads/2025/11/calendar.svg" />
 					</div>
@@ -47,11 +47,11 @@ $sectionClass .= $flip ? ' order-flip' : '';
 						{!! $g_hero['date'] !!}
 					</div>
 				</div>
-				<div class="flex items-center gap-2">
+				<div class="flex gap-2">
 					<div>
 						<img src="/wp-content/uploads/2025/11/place.svg" />
 					</div>
-					<div class=" text-center">
+					<div class="">
 						<a class="text-white !underline" target="_blank" href="{!! $g_hero['link'] !!}">{!! $g_hero['place'] !!}</a>
 					</div>
 				</div>

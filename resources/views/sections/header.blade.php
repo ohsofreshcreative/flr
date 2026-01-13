@@ -6,19 +6,20 @@ use App\Walkers\MobileDropdownWalker;
 <header x-data="{ mobileOpen: false }" class="relative top-0 z-50 bg-white masthead fixed-top">
 
 	<!-- Desktop Header -->
-	<div class="items-center justify-between hidden h-full py-4 px-12 mx-auto md:flex">
-		<a class="brand shrink-0" href="{{ home_url('/') }}">
+    <div class="items-center justify-between hidden h-max py-4 px-6 mx-auto lg:flex">
+
+		<a class="brand max-w-[144px] xl:max-w-[188px] shrink-0" href="{{ home_url('/') }}">
 			@if ($logo)
-			<img src="{{ $logo['url'] }}" alt="{{ $logo['alt'] ?? 'Logo' }}" class="w-auto h-12">
+			<img src="{{ $logo['url'] }}" alt="{{ $logo['alt'] ?? 'Logo' }}" class="w-auto h-16">
 			@else
 			<span class="text-xl font-bold">{{ $siteName }}</span>
 			@endif
 		</a>
 		@if (has_nav_menu('primary_navigation'))
-		<nav class="ml-6 lg:ml-15 nav-primary w-full" aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
+		<nav class="ml-6 lg:ml-10 nav-primary w-full" aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
 			{!! wp_nav_menu([
 			'theme_location' => 'primary_navigation',
-			'menu_class' => 'nav flex gap-x-3 lg:gap-x-6 text-lg font-medium justify-center items-center', 
+			'menu_class' => 'nav flex gap-x-1 lg:gap-x-3 xl:gap-x-6 text-lg font-medium justify-center items-center', 
 			'container' => false,
 			'echo' => false,
 			'walker' => new DropdownWalker(),
@@ -28,17 +29,17 @@ use App\Walkers\MobileDropdownWalker;
 
 
 			<div class="">
-				<a href="/zarejestruj-sie//" class="block w-full white-btn-s">
+				<a href="/zarejestruj-sie//" class="block w-full white-btn-s !px-4">
 					Zarejestruj się
 				</a>
 			</div>
 	</div>
 
 	<!-- Mobile Header Bar -->
-	<div class="flex items-center justify-between p-4 mobile-menu fixed-top md:hidden">
-		<a class="brand shrink-0" href="{{ home_url('/') }}">
+	<div class="flex items-center justify-between p-4 mobile-menu fixed-top lg:hidden">
+		<a class="brand max-w-[176px] shrink-0" href="{{ home_url('/') }}">
 			@if ($logo)
-			<img src="{{ $logo['url'] }}" alt="{{ $logo['alt'] ?? 'Logo' }}" class="w-auto h-12">
+			<img src="{{ $logo['url'] }}" alt="{{ $logo['alt'] ?? 'Logo' }}" class="w-20 md:w-auto h-16">
 			@else
 			<span class="text-lg font-bold">{{ $siteName }}</span>
 			@endif
@@ -70,11 +71,11 @@ use App\Walkers\MobileDropdownWalker;
 		x-transition:leave="transition ease-in duration-150"
 		x-transition:leave-start="opacity-100 transform translate-x-0"
 		x-transition:leave-end="opacity-0 transform translate-x-full"
-		class="mobile-menu fixed top-0 right-0 bottom-0 w-full h-full bg-primary shadow-xl z-[51] overflow-y-auto md:hidden" {{-- ZMIANA: Usunięto style="display: none;" i zmieniono z-40 na z-[51] --}}
+		class="mobile-menu fixed top-0 right-0 bottom-0 w-full h-full bg-dark shadow-xl z-[51] overflow-y-auto lg:hidden"
 		aria-label="Menu mobilne">
 		<div class="p-4 relative z-10">
 			<div class="flex items-center justify-between mb-6">
-				<span class=""><a class="brand shrink-0" href="{{ home_url('/') }}"><img src="{{ $logo['url'] }}" alt="{{ $logo['alt'] ?? 'Logo' }}" class="w-auto h-12"></a></span>
+				<span class=""><a class="brand shrink-0" href="{{ home_url('/') }}"><img src="{{ $logo['url'] }}" alt="{{ $logo['alt'] ?? 'Logo' }}" class="w-auto h-16"></a></span>
 				<button
 					@click="mobileOpen = false"
 					class="p-2 text-white rounded-md">
@@ -86,7 +87,7 @@ use App\Walkers\MobileDropdownWalker;
 			</div>
 
 			@if (has_nav_menu('primary_navigation'))
-			<nav class="flex flex-col space-y-1 mt-20">
+			 <nav x-data="{ active: null }" class="flex flex-col space-y-1 mt-20">
 				{!! wp_nav_menu([
 				'theme_location' => 'primary_navigation',
 				'menu_class' => 'nav-mobile flex flex-col space-y-2',
