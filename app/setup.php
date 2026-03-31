@@ -312,3 +312,17 @@ function auto_complete_processing_orders( $order_id, $old_status, $new_status, $
     }
 }
 ---*/
+
+
+
+add_action('acf/init', function () {
+    if (function_exists('acf_add_options_page')) {
+        acf_add_options_page([
+            'page_title' => __('Ustawienia Agendy', 'sage'),
+            'menu_title' => __('Agenda', 'sage'),
+            'menu_slug' => 'agenda-settings',
+            'capability' => 'edit_posts',
+            'redirect' => false,
+        ]);
+    }
+});
