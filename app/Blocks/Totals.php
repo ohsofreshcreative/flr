@@ -13,7 +13,7 @@ class Totals extends Block
 	public $category = 'formatting';
 	public $icon = 'list-view';
 	public $keywords = ['totals', 'ikony'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

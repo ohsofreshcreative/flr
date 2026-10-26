@@ -16,7 +16,7 @@ class Accordion extends Block
 	public $category = 'formatting';
 	public $icon = 'feedback';
 	public $keywords = ['accordion'];
-	public $mode = 'edit'; 
+	public $mode = 'preview'; 
 	public $supports = [
 		'align' => false,
 		'mode' => false,

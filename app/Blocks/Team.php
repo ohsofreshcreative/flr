@@ -13,7 +13,7 @@ class Team extends Block
 	public $category = 'formatting';
 	public $icon = 'admin-users';
 	public $keywords = ['team', 'nasz', 'zespol', 'kafelki'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

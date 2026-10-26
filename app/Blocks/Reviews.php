@@ -13,7 +13,7 @@ class Reviews extends Block
 	public $category = 'formatting';
 	public $icon = 'format-quote';
 	public $keywords = ['reviews', 'kafelki'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

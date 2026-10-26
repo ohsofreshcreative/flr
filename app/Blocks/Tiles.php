@@ -13,7 +13,7 @@ class Tiles extends Block
 	public $category = 'formatting';
 	public $icon = 'align-pull-right';
 	public $keywords = ['tiles', 'kafelki'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

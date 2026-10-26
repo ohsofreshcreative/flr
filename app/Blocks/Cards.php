@@ -13,7 +13,7 @@ class Cards extends Block
 	public $category = 'formatting';
 	public $icon = 'ellipsis';
 	public $keywords = ['cards', 'kafelki'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

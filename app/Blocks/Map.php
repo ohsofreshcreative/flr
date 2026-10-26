@@ -13,7 +13,7 @@ class Map extends Block
 	public $category = 'formatting';
 	public $icon = 'location';
 	public $keywords = ['map', 'mapa'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

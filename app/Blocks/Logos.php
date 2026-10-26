@@ -13,7 +13,7 @@ class Logos extends Block
 	public $category = 'formatting';
 	public $icon = 'image-flip-horizontal';
 	public $keywords = ['logos', 'kafelki'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => true,

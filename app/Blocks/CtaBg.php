@@ -13,7 +13,7 @@ class CtaBg extends Block
 	public $category = 'formatting';
 	public $icon = 'button';
 	public $keywords = ['cta-bg'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

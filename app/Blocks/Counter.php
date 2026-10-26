@@ -13,7 +13,7 @@ class Counter extends Block
 	public $category = 'formatting';
 	public $icon = 'clock';
 	public $keywords = ['licznik', 'czas'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

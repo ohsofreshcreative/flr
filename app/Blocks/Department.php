@@ -13,7 +13,7 @@ class Department extends Block
 	public $category = 'formatting';
 	public $icon = 'phone';
 	public $keywords = ['department', 'kafelki'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

@@ -13,7 +13,7 @@ class Experts extends Block
 	public $category = 'formatting';
 	public $icon = 'image-flip-horizontal';
 	public $keywords = ['experts', 'eksperci'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

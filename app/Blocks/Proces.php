@@ -13,7 +13,7 @@ class Proces extends Block
 	public $category = 'formatting';
 	public $icon = 'randomize';
 	public $keywords = ['proces'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

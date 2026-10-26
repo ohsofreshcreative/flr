@@ -13,7 +13,7 @@ class TextTiles extends Block
 	public $category = 'formatting';
 	public $icon = 'table-col-before';
 	public $keywords = ['text-tiles', 'kafelki'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

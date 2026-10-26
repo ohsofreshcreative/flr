@@ -13,7 +13,7 @@ class Connect extends Block
 	public $category = 'formatting';
 	public $icon = 'phone';
 	public $keywords = ['connect', 'dane kontaktowe'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

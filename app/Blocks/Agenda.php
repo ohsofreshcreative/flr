@@ -13,7 +13,7 @@ class Agenda extends Block
 	public $category = 'formatting';
 	public $icon = 'align-pull-left';
 	public $keywords = ['agenda', 'panel', 'zakładki'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

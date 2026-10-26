@@ -13,7 +13,7 @@ class Cta extends Block
 	public $category = 'formatting';
 	public $icon = 'button';
 	public $keywords = ['cta'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

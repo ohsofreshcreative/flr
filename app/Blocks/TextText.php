@@ -13,7 +13,7 @@ class TextText extends Block
 	public $category = 'formatting';
 	public $icon = 'columns';
 	public $keywords = ['dwie', 'kolumny'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

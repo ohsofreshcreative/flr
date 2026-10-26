@@ -13,7 +13,7 @@ class Info extends Block
 	public $category = 'formatting';
 	public $icon = 'info-outline';
 	public $keywords = ['tresc', 'informacje', 'zdjecie'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

@@ -13,7 +13,7 @@ class Numbers extends Block
 	public $category = 'formatting';
 	public $icon = 'yes-alt';
 	public $keywords = ['numbers', 'kafelki'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => true,

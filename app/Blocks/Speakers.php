@@ -13,7 +13,7 @@ class Speakers extends Block
 	public $category = 'formatting';
 	public $icon = 'welcome-learn-more';
 	public $keywords = ['speakers', 'kafelki'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

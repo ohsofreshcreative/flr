@@ -13,7 +13,7 @@ class Table extends Block
 	public $category = 'formatting';
 	public $icon = 'editor-table';
 	public $keywords = ['table', 'kafelki'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

@@ -13,7 +13,7 @@ class ContentCards extends Block
 	public $category = 'formatting';
 	public $icon = 'table-row-before';
 	public $keywords = ['content-cards', 'kafelki'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

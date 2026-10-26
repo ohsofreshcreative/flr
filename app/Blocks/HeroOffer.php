@@ -13,7 +13,7 @@ class HeroOffer extends Block
     public $category = 'formatting';
     public $icon = 'align-full-width';
     public $keywords = ['tresc', 'zdjecie', 'hero', 'oferta'];
-    public $mode = 'edit';
+    public $mode = 'preview';
     public $supports = [
         'align' => false,
         'mode' => false,

@@ -13,7 +13,7 @@ class Tailored extends Block
 	public $category = 'formatting';
 	public $icon = 'yes-alt';
 	public $keywords = ['tailored', 'kafelki'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

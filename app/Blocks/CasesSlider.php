@@ -13,7 +13,7 @@ class CasesSlider extends Block
 	public $category = 'formatting';
 	public $icon = 'format-image';
 	public $keywords = ['realizacje', 'lista', 'cases', 'kafelki'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

@@ -13,7 +13,7 @@ class Image extends Block
 	public $category = 'formatting';
 	public $icon = 'format-image';
 	public $keywords = ['obraz', 'zdjecie'];
-	public $mode = 'edit'; 
+	public $mode = 'preview'; 
 	public $supports = [
 		'align' => false,
 		'mode' => false,

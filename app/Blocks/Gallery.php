@@ -13,7 +13,7 @@ class Gallery extends Block
 	public $category = 'formatting';
 	public $icon = 'format-gallery';
 	public $keywords = ['gallery', 'kafelki'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

@@ -13,7 +13,7 @@ class Template extends Block
 	public $category = 'formatting';
 	public $icon = 'screenoptions';
 	public $keywords = ['template'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

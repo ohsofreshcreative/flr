@@ -14,7 +14,7 @@ class Reach extends Block
 	public $category = 'formatting';
 	public $icon = 'email';
 	public $keywords = ['formularz', 'dołącz'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

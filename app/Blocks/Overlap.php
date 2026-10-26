@@ -13,7 +13,7 @@ class Overlap extends Block
 	public $category = 'formatting';
 	public $icon = 'align-wide';
 	public $keywords = ['tresc', 'zdjecie', 'overlap'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

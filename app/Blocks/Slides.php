@@ -13,7 +13,7 @@ class Slides extends Block
 	public $category = 'formatting';
 	public $icon = 'image-flip-horizontal';
 	public $keywords = ['slides', 'kafelki'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => true,

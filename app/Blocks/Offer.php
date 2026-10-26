@@ -13,7 +13,7 @@ class Offer extends Block
 	public $category = 'formatting';
 	public $icon = 'grid-view';
 	public $keywords = ['offer', 'oferta', 'kafelki', 'kategorie'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

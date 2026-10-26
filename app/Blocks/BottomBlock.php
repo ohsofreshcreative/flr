@@ -13,7 +13,7 @@ class BottomBlock extends Block
 	public $category = 'formatting';
 	public $icon = 'email';
 	public $keywords = ['offer', 'cards', 'oferta', 'kafelki'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

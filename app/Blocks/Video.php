@@ -13,7 +13,7 @@ class Video extends Block
 	public $category = 'formatting';
 	public $icon = 'video-alt3';
 	public $keywords = ['video', 'wideo'];
-	public $mode = 'edit';
+	public $mode = 'preview';
 	public $supports = [
 		'align' => false,
 		'mode' => false,

@@ -13,7 +13,7 @@ class CategoryPosts extends Block
     public $category = 'formatting';
     public $icon = 'admin-post';
     public $keywords = ['posts', 'category', 'wpisy', 'kategoria'];
-    public $mode = 'edit';
+    public $mode = 'preview';
     public $supports = [
         'align' => false,
         'mode' => false,
