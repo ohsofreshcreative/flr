@@ -16,7 +16,7 @@ class Slides extends Block
 	public $mode = 'edit';
 	public $supports = [
 		'align' => false,
-		'mode' => false,
+		'mode' => true,
 		'jsx' => true,
 	];
 
@@ -48,10 +48,8 @@ class Slides extends Block
 				'max' => 10,
 				'button_label' => 'Dodaj kafelek'
 			])
-			->addImage('image', [
-				'label' => 'Obraz',
-				'return_format' => 'array', // lub 'url', lub 'id'
-				'preview_size' => 'medium',
+			->addOembed('video', [
+				'label' => 'Wideo (oEmbed)',
 			])
 			->addText('title', [
 				'label' => 'Nagłówek',

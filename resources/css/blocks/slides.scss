@@ -1,0 +1,40 @@
+.b-slides {
+	.__video {
+		aspect-ratio: 16 / 9;
+	}
+
+	iframe {
+		width: 100%;
+		height: 100%;
+	}
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		background-color: var(--primary);
+		border-radius: 200px;
+		width: 56px;
+		height: 56px;
+		font-weight: bolder;
+		border: 4px solid #FFF;
+		color: #FFF;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.swiper-button-next:after,
+	.swiper-button-prev:after {
+
+		font-size: 24px !important;
+	}
+
+	.swiper-button-next:hover,
+	.swiper-button-prev:hover {
+		background-color: var(--p-hover);
+		font-size: 24px !important;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		cursor: pointer;
+	}
+}
