@@ -35,12 +35,12 @@
     ]
   },
   "resources/js/editor.js": {
-    "file": "assets/editor-CPIbxgI2.js",
+    "file": "assets/editor-CRNezKXx.js",
     "name": "editor",
     "src": "resources/js/editor.js",
     "isEntry": true,
     "css": [
-      "assets/editor-ZjgBs8JU.css"
+      "assets/editor-6H5dcVL-.css"
     ]
   }
 }

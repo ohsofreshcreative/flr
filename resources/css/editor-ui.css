@@ -20,6 +20,21 @@ body:not(.flr-acf-modal-open) .block-editor-block-inspector .acf-block-panel {
 	display: none !important;
 }
 
+/**
+ * Formularz ACF siedzi w DOM wewnątrz sidebara, a jego przodkowie tworzą
+ * własne konteksty warstw — wtedy nawet wysoki z-index działa tylko w obrębie
+ * sidebara i nagłówek „Strona / Blok” albo górny pasek edytora wychodzą nad panel.
+ * Na czas otwarcia zdejmujemy te konteksty wszystkim przodkom panelu.
+ */
+body.flr-acf-modal-open :has(.acf-block-panel, .flr-acf-modal-backdrop) {
+	z-index: auto !important;
+	transform: none !important;
+	filter: none !important;
+	contain: none !important;
+	will-change: auto !important;
+	isolation: auto !important;
+}
+
 /* Panel wysuwany z prawej krawędzi na całą wysokość. */
 body.flr-acf-modal-open .block-editor-block-inspector .acf-block-panel {
 	position: fixed;
