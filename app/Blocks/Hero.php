@@ -26,15 +26,6 @@ class Hero extends Block
 
 		$hero
 			->setLocation('block', '==', 'acf/hero') // ważne!
-			->addText('block-title', [
-				'label' => 'Tytuł',
-				'required' => 0,
-			])
-			->addAccordion('accordion1', [
-				'label' => 'Hero',
-				'open' => false,
-				'multi_expand' => true,
-			])
 			->addTab('Treść', ['placement' => 'top'])
 			->addGroup('g_hero', ['label' => 'Hero'])
 			->addTrueFalse('use_video', [
