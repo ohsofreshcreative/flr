@@ -24,7 +24,7 @@ add_filter('woocommerce_product_single_add_to_cart_text', function () {
 /*--- CHANGE CHECKOUT TITLE ---*/
 
 add_filter('gettext', function ($translated_text, $text, $domain) {
-    if (is_checkout() && $domain === 'woocommerce' && $text === 'Billing details') {
+    if ($domain === 'woocommerce' && $text === 'Billing details' && function_exists('is_checkout') && is_checkout()) {
         $translated_text = 'Zarejestruj się';
     }
     return $translated_text;
@@ -114,4 +114,17 @@ add_filter('woocommerce_checkout_fields', function ($fields) {
 add_filter('woocommerce_checkout_fields', function ($fields) {
     $fields['billing']['billing_email']['placeholder'] = 'na ten adres zostanie przesłane potwierdzenie rejestracji oraz faktura';
     return $fields;
+});
+/*--- CHANGE EDIT SECTION ---*/
+
+add_filter('gettext', function ($translated, $text, $domain) {
+    if (is_admin() && $text === 'Open expanded editor') {
+        return 'Edytuj sekcję';
+    }
+
+    return $translated;
+}, 10, 3);
+
+add_filter('acf/blocks/default_expanded_editor_button_text', function () {
+    return 'Edytuj sekcję';
 });

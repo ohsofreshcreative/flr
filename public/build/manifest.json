@@ -1,10 +1,10 @@
 {
   "editor.deps.json": {
-    "file": "assets/editor.deps-BwpabTI-.json",
+    "file": "assets/editor.deps-DxpY22xl.json",
     "src": "editor.deps.json"
   },
   "resources/css/app.css": {
-    "file": "assets/app-DP7d0UiL.css",
+    "file": "assets/app-AV0YNhmM.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "name": "app",
@@ -13,7 +13,7 @@
     ]
   },
   "resources/css/editor.css": {
-    "file": "assets/editor-CyxmRA6r.css",
+    "file": "assets/editor-CD1Tc98S.css",
     "src": "resources/css/editor.css",
     "isEntry": true,
     "name": "editor",
@@ -26,7 +26,7 @@
     "src": "resources/images/ohsofresh.svg"
   },
   "resources/js/app.js": {
-    "file": "assets/app-CVsJbQJX.js",
+    "file": "assets/app-Cg0VUeKK.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -35,12 +35,9 @@
     ]
   },
   "resources/js/editor.js": {
-    "file": "assets/editor-bwFSRYFr.js",
+    "file": "assets/editor-CfU4GbSP.js",
     "name": "editor",
     "src": "resources/js/editor.js",
-    "isEntry": true,
-    "css": [
-      "assets/editor-CBWjdQpJ.css"
-    ]
+    "isEntry": true
   }
 }

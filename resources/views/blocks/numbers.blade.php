@@ -18,7 +18,7 @@ $sectionClass .= ' ' . $background;
 	<div class="__wrapper c-main">
 		<div class="">
 			@if (!empty($g_numbers['header']))
-			<h3 class="">{{ strip_tags($g_numbers['header']) }}</h3>
+			<h3 class="text-white">{{ strip_tags($g_numbers['header']) }}</h3>
 			@endif
 
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-10">

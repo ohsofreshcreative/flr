@@ -8,33 +8,45 @@
 		height: 100%;
 	}
 
-	.swiper-button-next,
-	.swiper-button-prev {
-		background-color: var(--primary);
-		border-radius: 200px;
+	.offer-swiper .swiper-button-next,
+	.offer-swiper .swiper-button-prev {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		width: 56px;
 		height: 56px;
-		font-weight: bolder;
-		border: 4px solid #FFF;
-		color: #FFF;
-		transition: all 0.3s ease-in-out;
-	}
-
-	.swiper-button-next:after,
-	.swiper-button-prev:after {
-
-		font-size: 24px !important;
-	}
-
-	.swiper-button-next:hover,
-	.swiper-button-prev:hover {
-		background-color: var(--p-hover);
-		font-size: 24px !important;
-		transition: all 0.3s ease-in-out;
-	}
-
-	.swiper-button-prev,
-	.swiper-button-next {
+		margin-top: -28px;
+		border: 0;
+		border-radius: 200px;
+		background-color: #FFF;
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+		color: var(--p-800);
 		cursor: pointer;
+		transform: none;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.offer-swiper .swiper-button-next {
+		right: 16px;
+	}
+
+	.offer-swiper .swiper-button-prev {
+		left: 16px;
+	}
+
+	.offer-swiper .swiper-button-next:hover,
+	.offer-swiper .swiper-button-prev:hover {
+		background-color: var(--p-100);
+	}
+
+	.offer-swiper .swiper-button-next svg,
+	.offer-swiper .swiper-button-prev svg {
+		width: 24px;
+		height: 24px;
+	}
+
+	.offer-swiper .swiper-button-next:after,
+	.offer-swiper .swiper-button-prev:after {
+		content: none;
 	}
 }

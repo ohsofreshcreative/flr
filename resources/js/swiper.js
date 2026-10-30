@@ -47,7 +47,7 @@ const swiper = new Swiper(swiperContainer, swiperReviews);
 /*--- SWIPER ---*/
 
 document.addEventListener('DOMContentLoaded', () => {
-  const swipers = document.querySelectorAll('.swiper');
+  const swipers = document.querySelectorAll('.swiper:not(.offer-swiper):not(.usage-swiper)');
 
   if (swipers.length > 0) {
     swipers.forEach((container) => {

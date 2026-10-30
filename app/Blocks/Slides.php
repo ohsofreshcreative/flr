@@ -36,7 +36,7 @@ class Slides extends Block
 				'label' => 'Slider - Kafelki',
 				'layout' => 'table', // 'row', 'block', albo 'table'
 				'min' => 1,
-				'max' => 10,
+				'max' => 20,
 				'button_label' => 'Dodaj kafelek'
 			])
 			->addOembed('video', [

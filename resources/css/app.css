@@ -38,6 +38,7 @@
 @import '../css/blocks/text-tiles.scss';
 @import '../css/blocks/tiles.scss';
 @import '../css/blocks/agenda.scss';
+@import '../css/blocks/logos.scss';
 
 
 /*-- NOT USED --*/
@@ -47,6 +48,7 @@
 @import '../css/blocks/opinion.scss';
 @import '../css/blocks/area-block.scss';
 @import '../css/blocks/offer-cards-block.scss';
+@import '../css/blocks/slides.scss';
 @import '../css/blocks/cases.scss';
 @import '../css/blocks/reviews.scss';
 @import '../css/blocks/offer.scss';
