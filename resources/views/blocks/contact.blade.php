@@ -4,7 +4,7 @@ $sectionClass = '';
 
 <!--- contact -->
 
-<section data-gsap-anim="section" id="kontakt" class="b-contact relative -spt mb-20 {{ $sectionClass }}">
+<section data-gsap-anim="section" id="kontakt" class="b-contact relative bg-dark -spt mb-20 {{ $sectionClass }}" style="background-image: url('/wp-content/uploads/2025/08/footer-bg.png');">
 
 	<div class="__wrapper c-main relative z-2">
 
