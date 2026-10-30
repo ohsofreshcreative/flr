@@ -262,6 +262,13 @@
 	background-color: #fff !important;
 }
 
+/* To samo w iframe TinyMCE (pola WYSIWYG ACF), który też dostaje ten plik przez mce_css. */
+:root:has(.mce-content-body),
+.mce-content-body {
+	background-color: #fff !important;
+	color: var(--text-body);
+}
+
 /* Na kanwie bez tła sekcji tekst i nagłówki powinny pozostać czytelne. */
 .editor-styles-wrapper {
 	color: var(--text-body);
