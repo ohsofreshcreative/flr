@@ -13,7 +13,7 @@
 		<p class="text-h5">{{ $g_contact_1['title'] }}</p>
 		@endif
 		@if (!empty($g_contact_1['txt']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_contact_1['txt']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_contact_1['txt']), 24) !!}</p>
 		@endif
 		@if (!empty($g_contact_1['phone']))
 		<p>{{ wp_strip_all_tags($g_contact_1['phone']) }}</p>

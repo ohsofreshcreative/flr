@@ -25,7 +25,7 @@
 				<p class="text-h5">{{ $item['title'] }}</p>
 				@endif
 				@if (!empty($item['txt']))
-				<p>{{ wp_trim_words(wp_strip_all_tags($item['txt']), 24) }}</p>
+				<p>{!! wp_trim_words(wp_strip_all_tags($item['txt']), 24) !!}</p>
 				@endif
 			</div>
 			@endforeach

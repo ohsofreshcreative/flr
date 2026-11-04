@@ -17,7 +17,7 @@ $g_logos = $g_logos ?? get_field('g_logos');
 		<p class="text-h5">{{ $g_logos['title'] }}</p>
 		@endif
 		@if (!empty($g_logos['txt']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_logos['txt']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_logos['txt']), 24) !!}</p>
 		@endif
 		@if (!empty($g_logos['logos_gallery']))
 		<div class="acf-preview__logo-list flex flex-wrap items-center">

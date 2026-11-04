@@ -19,7 +19,7 @@
 		<p class="text-h5">{{ $g_reviews['title'] }}</p>
 		@endif
 		@if (!empty($g_reviews['txt']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_reviews['txt']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_reviews['txt']), 24) !!}</p>
 		@endif
 		<div class="acf-preview__grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
 			@foreach (array_slice((array) ($r_reviews ?? []), 0, 3) as $item)
@@ -28,7 +28,7 @@
 				<figure class="acf-preview__media m-0">{!! wp_get_attachment_image($item['img']['ID'], 'thumbnail', false, ['class' => 'h-20 w-32 object-contain']) !!}</figure>
 				@endif
 				@if (!empty($item['txt']))
-				<p>{{ wp_trim_words(wp_strip_all_tags($item['txt']), 24) }}</p>
+				<p>{!! wp_trim_words(wp_strip_all_tags($item['txt']), 24) !!}</p>
 				@endif
 				@if (!empty($item['name']))
 				<p>{{ wp_strip_all_tags($item['name']) }}</p>

@@ -13,7 +13,7 @@
 		<p class="text-h5">{{ $faq['title'] }}</p>
 		@endif
 		@if (!empty($faq['content']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($faq['content']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($faq['content']), 24) !!}</p>
 		@endif
 		@if (!empty($faq['button']['title']))
 		<div class="acf-preview-actions"><span class="acf-preview-button">{{ $faq['button']['title'] }}</span></div>
@@ -25,7 +25,7 @@
 				<p class="text-h5">{{ $item['title'] }}</p>
 				@endif
 				@if (!empty($item['txt']))
-				<p>{{ wp_trim_words(wp_strip_all_tags($item['txt']), 24) }}</p>
+				<p>{!! wp_trim_words(wp_strip_all_tags($item['txt']), 24) !!}</p>
 				@endif
 			</div>
 			@endforeach

@@ -19,7 +19,7 @@
 		<p class="text-h5">{{ $col1['header'] }}</p>
 		@endif
 		@if (!empty($col1['content']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($col1['content']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($col1['content']), 24) !!}</p>
 		@endif
 		@if (!empty($col2['image']['ID']))
 		<figure class="acf-preview__media m-0">{!! wp_get_attachment_image($col2['image']['ID'], 'thumbnail', false, ['class' => 'h-20 w-32 object-contain']) !!}</figure>

@@ -16,7 +16,7 @@
 		<p class="text-h5">{{ $g_team['title'] }}</p>
 		@endif
 		@if (!empty($g_team['content']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_team['content']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_team['content']), 24) !!}</p>
 		@endif
 		<div class="acf-preview__grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
 			@foreach (array_slice((array) ($repeater ?? []), 0, 3) as $item)

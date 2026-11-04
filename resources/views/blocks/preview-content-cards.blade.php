@@ -16,7 +16,7 @@
 		<p class="text-h5">{{ $textimg['title'] }}</p>
 		@endif
 		@if (!empty($textimg['content']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($textimg['content']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($textimg['content']), 24) !!}</p>
 		@endif
 		@if (!empty($tiles['title']))
 		<p class="text-h5">{{ $tiles['title'] }}</p>
@@ -31,7 +31,7 @@
 				<p class="text-h5">{{ $item['card_title'] }}</p>
 				@endif
 				@if (!empty($item['card_txt']))
-				<p>{{ wp_trim_words(wp_strip_all_tags($item['card_txt']), 24) }}</p>
+				<p>{!! wp_trim_words(wp_strip_all_tags($item['card_txt']), 24) !!}</p>
 				@endif
 			</div>
 			@endforeach

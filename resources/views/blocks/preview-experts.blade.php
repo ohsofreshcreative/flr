@@ -16,7 +16,7 @@
 		<p class="text-h5">{{ $g_experts['header'] }}</p>
 		@endif
 		@if (!empty($g_experts['txt']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_experts['txt']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_experts['txt']), 24) !!}</p>
 		@endif
 		@if (!empty($g_experts['button']['title']))
 		<div class="acf-preview-actions"><span class="acf-preview-button">{{ $g_experts['button']['title'] }}</span></div>

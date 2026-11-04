@@ -20,7 +20,7 @@ $header = $header ?? get_field('header');
 		<p class="text-h5">{{ $g_tiles['header'] }}</p>
 		@endif
 		@if (!empty($g_tiles['text']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_tiles['text']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_tiles['text']), 24) !!}</p>
 		@endif
 		@if (!empty($g_tiles['button']['title']))
 		<div class="acf-preview-actions"><span class="acf-preview-button">{{ $g_tiles['button']['title'] }}</span></div>
@@ -35,7 +35,7 @@ $header = $header ?? get_field('header');
 				<p class="text-h5">{{ $item['header'] }}</p>
 				@endif
 				@if (!empty($item['txt']))
-				<p>{{ wp_trim_words(wp_strip_all_tags($item['txt']), 24) }}</p>
+				<p>{!! wp_trim_words(wp_strip_all_tags($item['txt']), 24) !!}</p>
 				@endif
 			</div>
 			@endforeach

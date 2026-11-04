@@ -16,7 +16,7 @@
 		<p class="text-h5">{{ $g_cards['header'] }}</p>
 		@endif
 		@if (!empty($g_cards['text']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_cards['text']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_cards['text']), 24) !!}</p>
 		@endif
 		<div class="acf-preview__grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
 			@foreach (array_slice((array) ($g_cards['r_cards'] ?? []), 0, 3) as $item)
@@ -28,7 +28,7 @@
 				<p class="text-h5">{{ $item['header'] }}</p>
 				@endif
 				@if (!empty($item['text']))
-				<p>{{ wp_trim_words(wp_strip_all_tags($item['text']), 24) }}</p>
+				<p>{!! wp_trim_words(wp_strip_all_tags($item['text']), 24) !!}</p>
 				@endif
 				@if (!empty($item['button']['title']))
 				<div class="acf-preview-actions"><span class="acf-preview-button">{{ $item['button']['title'] }}</span></div>

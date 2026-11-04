@@ -19,10 +19,10 @@
 		<p class="text-h5">{{ $g_workshops['title'] }}</p>
 		@endif
 		@if (!empty($g_workshops['text1']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_workshops['text1']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_workshops['text1']), 24) !!}</p>
 		@endif
 		@if (!empty($g_workshops['text2']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_workshops['text2']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_workshops['text2']), 24) !!}</p>
 		@endif
 		@if (!empty($g_workshops['button']['title']))
 		<div class="acf-preview-actions"><span class="acf-preview-button">{{ $g_workshops['button']['title'] }}</span></div>

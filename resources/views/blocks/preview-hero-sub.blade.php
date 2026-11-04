@@ -16,7 +16,7 @@
 		<p class="text-h5">{{ $g_hero_sub['header'] }}</p>
 		@endif
 		@if (!empty($g_hero_sub['text']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_hero_sub['text']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_hero_sub['text']), 24) !!}</p>
 		@endif
 		@if (!empty($g_hero_sub['button1']['title']))
 		<div class="acf-preview-actions"><span class="acf-preview-button">{{ $g_hero_sub['button1']['title'] }}</span></div>

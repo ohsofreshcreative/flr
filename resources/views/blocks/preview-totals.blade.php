@@ -16,7 +16,7 @@
 		<p class="text-h5">{{ $g_totals['title'] }}</p>
 		@endif
 		@if (!empty($g_totals['txt']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_totals['txt']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_totals['txt']), 24) !!}</p>
 		@endif
 		@if (!empty($g_totals['button']['title']))
 		<div class="acf-preview-actions"><span class="acf-preview-button">{{ $g_totals['button']['title'] }}</span></div>
@@ -28,7 +28,7 @@
 				<p class="text-h5">{{ $item['title'] }}</p>
 				@endif
 				@if (!empty($item['txt']))
-				<p>{{ wp_trim_words(wp_strip_all_tags($item['txt']), 24) }}</p>
+				<p>{!! wp_trim_words(wp_strip_all_tags($item['txt']), 24) !!}</p>
 				@endif
 			</div>
 			@endforeach

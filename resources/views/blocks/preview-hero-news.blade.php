@@ -16,7 +16,7 @@
 		<p class="text-h5">{{ $g_hero_news['header'] }}</p>
 		@endif
 		@if (!empty($g_hero_news['text']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_hero_news['text']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_hero_news['text']), 24) !!}</p>
 		@endif
 		@if (!empty($g_hero_news['date']))
 		<p>{{ wp_strip_all_tags($g_hero_news['date']) }}</p>
@@ -28,7 +28,7 @@
 		<p class="text-h5">{{ $g_hero_news['title'] }}</p>
 		@endif
 		@if (!empty($g_hero_news['opis']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_hero_news['opis']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_hero_news['opis']), 24) !!}</p>
 		@endif
 	</div>
 </div>

@@ -19,7 +19,7 @@
 		<p class="text-h5">{{ $g_about['title'] }}</p>
 		@endif
 		@if (!empty($g_about['txt']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_about['txt']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_about['txt']), 24) !!}</p>
 		@endif
 		@if (!empty($g_about['button']['title']))
 		<div class="acf-preview-actions"><span class="acf-preview-button">{{ $g_about['button']['title'] }}</span></div>
@@ -34,7 +34,7 @@
 				<p class="text-h5">{{ $item['title'] }}</p>
 				@endif
 				@if (!empty($item['txt']))
-				<p>{{ wp_trim_words(wp_strip_all_tags($item['txt']), 24) }}</p>
+				<p>{!! wp_trim_words(wp_strip_all_tags($item['txt']), 24) !!}</p>
 				@endif
 			</div>
 			@endforeach

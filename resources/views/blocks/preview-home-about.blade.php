@@ -22,7 +22,7 @@
 		<p class="text-h5">{{ $g_about['header'] }}</p>
 		@endif
 		@if (!empty($g_about['txt']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_about['txt']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_about['txt']), 24) !!}</p>
 		@endif
 		@if (!empty($g_about['where']))
 		<p>{{ wp_strip_all_tags($g_about['where']) }}</p>

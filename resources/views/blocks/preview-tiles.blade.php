@@ -16,7 +16,7 @@
 		<p class="text-h5">{{ $g_tiles['header'] }}</p>
 		@endif
 		@if (!empty($g_tiles['text']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_tiles['text']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_tiles['text']), 24) !!}</p>
 		@endif
 		<div class="acf-preview__grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
 			@foreach (array_slice((array) ($r_tiles ?? []), 0, 3) as $item)
@@ -28,7 +28,7 @@
 				<p class="text-h5">{{ $item['card_title'] }}</p>
 				@endif
 				@if (!empty($item['card_txt']))
-				<p>{{ wp_trim_words(wp_strip_all_tags($item['card_txt']), 24) }}</p>
+				<p>{!! wp_trim_words(wp_strip_all_tags($item['card_txt']), 24) !!}</p>
 				@endif
 			</div>
 			@endforeach

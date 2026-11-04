@@ -22,7 +22,7 @@
 		<p class="text-h5">{{ $g_hero['title'] }}</p>
 		@endif
 		@if (!empty($g_hero['txt']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_hero['txt']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_hero['txt']), 24) !!}</p>
 		@endif
 		@if (!empty($g_hero['date']))
 		<p>{{ wp_strip_all_tags($g_hero['date']) }}</p>

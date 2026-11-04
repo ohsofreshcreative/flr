@@ -21,7 +21,7 @@ $r_herooffer = $r_herooffer ?? get_field('r_herooffer');
 		<p class="text-h5">{{ $g_herooffer['title'] }}</p>
 		@endif
 		@if (!empty($g_herooffer['content']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_herooffer['content']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_herooffer['content']), 24) !!}</p>
 		@endif
 		<div class="acf-preview__grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
 			@foreach (array_slice((array) ($r_herooffer ?? []), 0, 3) as $item)

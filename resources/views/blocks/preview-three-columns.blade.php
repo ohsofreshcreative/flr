@@ -19,7 +19,7 @@
 		<p class="text-h5">{{ $threecols['title'] }}</p>
 		@endif
 		@if (!empty($threecols['content']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($threecols['content']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($threecols['content']), 24) !!}</p>
 		@endif
 	</div>
 </div>

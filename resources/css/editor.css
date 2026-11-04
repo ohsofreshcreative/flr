@@ -289,10 +289,10 @@
  * Wspólny markup: partials/block-preview-intro i partials/block-preview-items.
  */
 .editor-styles-wrapper .acf-preview {
-	--pv-ink: #1f2937;
-	--pv-muted: #5b6b7b;
-	--pv-line: #dce8f4;
-	--pv-soft: #f4f7fa;
+	--pv-ink: #1f2228;
+	--pv-muted: #626262;
+	--pv-line: #e6e6e8;
+	--pv-soft: #f7f7f8;
 
 	display: block;
 	position: static !important;
@@ -331,7 +331,7 @@
 }
 
 .editor-styles-wrapper .block-editor-block-list__block[data-type^="acf/"]:is(:hover, .is-selected) .acf-preview {
-	border-color: rgba(var(--p-500), 0.45);
+	border-color: color-mix(in srgb, var(--p-500) 45%, transparent);
 	box-shadow: 0 6px 18px rgba(0, 44, 78, 0.08);
 }
 
@@ -365,7 +365,7 @@
 	align-items: center;
 	gap: 8px;
 	margin: 0;
-	color: rgb(var(--p-700));
+	color: var(--p-700);
 	font-size: 13px;
 	font-weight: 600;
 	line-height: 1.3;
@@ -376,8 +376,8 @@
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background: rgb(var(--secondary));
-	box-shadow: 0 0 0 3px rgba(var(--secondary), 0.2);
+	background: var(--secondary);
+	box-shadow: 0 0 0 3px color-mix(in srgb, var(--secondary) 20%, transparent);
 }
 
 .editor-styles-wrapper .acf-preview__slug {
@@ -416,8 +416,8 @@
 }
 
 .editor-styles-wrapper .acf-preview__setting--background {
-	border-color: rgba(var(--p-500), 0.3);
-	color: rgb(var(--p-700));
+	border-color: color-mix(in srgb, var(--p-500) 30%, transparent);
+	color: var(--p-700);
 }
 
 .editor-styles-wrapper .acf-preview__setting--nomt {
@@ -457,6 +457,102 @@
 	display: none;
 }
 
+/**
+ * Prosty markup szablonów preview-*.blade.php: obraz, .text-h6 (nadtytuł),
+ * .text-h5 (nagłówek), p (tekst), przyciski — wszystko jako dzieci __content.
+ * Obraz ląduje po prawej, tekst po lewej.
+ */
+.editor-styles-wrapper .acf-preview__content:has(> .acf-preview__media) {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) 132px;
+	align-content: start;
+	column-gap: 20px;
+	row-gap: 6px;
+}
+
+.editor-styles-wrapper .acf-preview__content > * {
+	grid-column: 1;
+}
+
+.editor-styles-wrapper .acf-preview__content > .acf-preview__media {
+	grid-column: 2;
+	grid-row: 1 / span 6;
+	align-self: start;
+}
+
+.editor-styles-wrapper .acf-preview__content > .acf-preview__grid {
+	grid-column: 1 / -1;
+	margin-top: 10px;
+}
+
+.editor-styles-wrapper .acf-preview .text-h6 {
+	color: var(--primary);
+	font-size: 10.5px !important;
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	line-height: 1.4 !important;
+	text-transform: uppercase;
+}
+
+.editor-styles-wrapper .acf-preview .text-h5 {
+	color: var(--pv-ink);
+	font-family: var(--header);
+	font-size: 15px !important;
+	font-weight: 600;
+	line-height: 1.3 !important;
+}
+
+.editor-styles-wrapper .acf-preview__content > p:not([class]),
+.editor-styles-wrapper .acf-preview__card > p:not([class]) {
+	color: var(--pv-muted);
+	font-size: 12px;
+	line-height: 1.55;
+}
+
+.editor-styles-wrapper .acf-preview__content > .acf-preview-actions {
+	margin-top: 4px;
+}
+
+/* Karty repeatera: obraz jako mała miniatura, nie pełny kafel. */
+.editor-styles-wrapper .acf-preview__card {
+	flex-direction: column;
+	gap: 6px;
+}
+
+.editor-styles-wrapper .acf-preview__card > .acf-preview__media {
+	width: 56px;
+	height: 56px;
+	aspect-ratio: auto;
+	border-radius: 6px;
+}
+
+/* Białe ikony (np. blok Informacje) — czerwone kółko jak na froncie. */
+.editor-styles-wrapper .acf-preview__grid--icons .acf-preview__card > .acf-preview__media {
+	width: 40px;
+	height: 40px;
+	padding: 8px;
+	box-sizing: border-box;
+	border: 0;
+	border-radius: 50%;
+	background: var(--primary);
+}
+
+.editor-styles-wrapper .acf-preview__grid--icons .acf-preview__card > .acf-preview__media img {
+	object-fit: contain;
+}
+
+.editor-styles-wrapper .acf-preview__card .text-h5 {
+	font-size: 12.5px !important;
+}
+
+.editor-styles-wrapper .acf-preview__card > p:not([class]) {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	font-size: 11.5px;
+}
+
 .editor-styles-wrapper .acf-preview__intro {
 	display: grid;
 	align-items: center;
@@ -483,7 +579,7 @@
 }
 
 .editor-styles-wrapper .acf-preview__eyebrow {
-	color: rgb(var(--s-700));
+	color: var(--s-700);
 	font-size: 10.5px;
 	font-weight: 600;
 	letter-spacing: 0.08em;
@@ -499,7 +595,7 @@
 }
 
 .editor-styles-wrapper .acf-preview__subheader {
-	color: rgb(var(--p-600));
+	color: var(--p-600);
 	font-size: 13px;
 	font-weight: 600;
 	line-height: 1.35;
@@ -572,9 +668,9 @@
 	display: inline-flex;
 	align-items: center;
 	padding: 5px 13px;
-	border: 1px solid rgb(var(--primary));
+	border: 1px solid var(--primary);
 	border-radius: 999px;
-	background: rgb(var(--primary));
+	background: var(--primary);
 	color: #fff;
 	font-family: var(--btns-font);
 	font-size: 11px;
@@ -584,12 +680,12 @@
 
 .editor-styles-wrapper .acf-preview .acf-preview-button--ghost {
 	background: #fff;
-	color: rgb(var(--primary));
+	color: var(--primary);
 }
 
 .editor-styles-wrapper .acf-preview .acf-preview-link {
 	margin-top: 2px;
-	color: rgb(var(--primary));
+	color: var(--primary);
 	font-size: 11px;
 	font-weight: 600;
 }
@@ -646,8 +742,8 @@
 	height: 18px;
 	padding: 0 5px;
 	border-radius: 999px;
-	background: rgba(var(--secondary), 0.15);
-	color: rgb(var(--s-800));
+	background: color-mix(in srgb, var(--secondary) 15%, transparent);
+	color: var(--s-800);
 	font-size: 10px;
 	letter-spacing: 0;
 }
@@ -690,7 +786,7 @@
 	box-sizing: border-box;
 	border: 0;
 	border-radius: 50%;
-	background: rgb(var(--primary));
+	background: var(--primary);
 }
 
 .editor-styles-wrapper .acf-preview__grid--icons .acf-preview__thumb img {
@@ -730,9 +826,9 @@
 	display: grid;
 	place-items: center;
 	padding: 10px;
-	border: 1px dashed rgba(var(--p-500), 0.35);
+	border: 1px dashed color-mix(in srgb, var(--p-500) 35%, transparent);
 	border-radius: 8px;
-	color: rgb(var(--p-600));
+	color: var(--p-600);
 	font-size: 11.5px;
 	font-weight: 600;
 }

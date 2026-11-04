@@ -16,7 +16,7 @@
 		<p class="text-h5">{{ $g_opinion['title'] }}</p>
 		@endif
 		@if (!empty($g_opinion['txt']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_opinion['txt']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_opinion['txt']), 24) !!}</p>
 		@endif
 		@if (!empty($g_opinion['signature']))
 		<p>{{ wp_strip_all_tags($g_opinion['signature']) }}</p>

@@ -25,7 +25,7 @@
 				<p>{{ wp_strip_all_tags($item['name']) }}</p>
 				@endif
 				@if (!empty($item['text']))
-				<p>{{ wp_trim_words(wp_strip_all_tags($item['text']), 24) }}</p>
+				<p>{!! wp_trim_words(wp_strip_all_tags($item['text']), 24) !!}</p>
 				@endif
 				@if (!empty($item['phone']))
 				<p>{{ wp_strip_all_tags($item['phone']) }}</p>

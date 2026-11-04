@@ -16,7 +16,7 @@
 		<p class="text-h5">{{ $tab1['title'] }}</p>
 		@endif
 		@if (!empty($tab1['content']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($tab1['content']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($tab1['content']), 24) !!}</p>
 		@endif
 		@if (!empty($tab1['button']['title']))
 		<div class="acf-preview-actions"><span class="acf-preview-button">{{ $tab1['button']['title'] }}</span></div>

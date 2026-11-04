@@ -19,7 +19,7 @@
 		<p class="text-h5">{{ $g_textimg['title'] }}</p>
 		@endif
 		@if (!empty($g_textimg['txt']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_textimg['txt']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_textimg['txt']), 24) !!}</p>
 		@endif
 		@if (!empty($g_textimg['button']['title']))
 		<div class="acf-preview-actions"><span class="acf-preview-button">{{ $g_textimg['button']['title'] }}</span></div>

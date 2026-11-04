@@ -16,7 +16,7 @@
 		<p class="text-h5">{{ $g_text['header'] }}</p>
 		@endif
 		@if (!empty($g_text['txt']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_text['txt']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_text['txt']), 24) !!}</p>
 		@endif
 		@if (!empty($g_text['button']['title']))
 		<div class="acf-preview-actions"><span class="acf-preview-button">{{ $g_text['button']['title'] }}</span></div>

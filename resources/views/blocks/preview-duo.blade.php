@@ -22,7 +22,7 @@
 		<p class="text-h5">{{ $g_duo['title'] }}</p>
 		@endif
 		@if (!empty($g_duo['txt']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_duo['txt']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_duo['txt']), 24) !!}</p>
 		@endif
 		@if (!empty($g_duo['button']['title']))
 		<div class="acf-preview-actions"><span class="acf-preview-button">{{ $g_duo['button']['title'] }}</span></div>

@@ -20,7 +20,7 @@ $cta_bg = $cta_bg ?? get_field('cta_bg');
 		<p class="text-h5">{{ $cta_bg['title'] }}</p>
 		@endif
 		@if (!empty($cta_bg['content']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($cta_bg['content']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($cta_bg['content']), 24) !!}</p>
 		@endif
 		@if (!empty($cta_bg['button']['title']))
 		<div class="acf-preview-actions"><span class="acf-preview-button">{{ $cta_bg['button']['title'] }}</span></div>

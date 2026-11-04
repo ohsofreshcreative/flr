@@ -19,9 +19,9 @@
 		<p class="text-h5">{{ $g_info['title'] }}</p>
 		@endif
 		@if (!empty($g_info['txt']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_info['txt']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_info['txt']), 24) !!}</p>
 		@endif
-		<div class="acf-preview__grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+		<div class="acf-preview__grid acf-preview__grid--icons grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
 			@foreach (array_slice((array) ($g_info['r_info'] ?? []), 0, 3) as $item)
 			<div class="acf-preview__card flex flex-col gap-2">
 				@if (!empty($item['image']['ID']))
@@ -31,7 +31,7 @@
 				<p class="text-h5">{{ $item['header'] }}</p>
 				@endif
 				@if (!empty($item['text']))
-				<p>{{ wp_trim_words(wp_strip_all_tags($item['text']), 24) }}</p>
+				<p>{!! wp_trim_words(wp_strip_all_tags($item['text']), 24) !!}</p>
 				@endif
 			</div>
 			@endforeach

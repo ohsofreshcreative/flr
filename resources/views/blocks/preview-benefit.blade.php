@@ -22,7 +22,7 @@
 		<p class="text-h5">{{ $g_benefit['title'] }}</p>
 		@endif
 		@if (!empty($g_benefit['txt']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_benefit['txt']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_benefit['txt']), 24) !!}</p>
 		@endif
 		@if (!empty($g_benefit['button']['title']))
 		<div class="acf-preview-actions"><span class="acf-preview-button">{{ $g_benefit['button']['title'] }}</span></div>

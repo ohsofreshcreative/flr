@@ -19,7 +19,7 @@
 		<p class="text-h5">{{ $g1_text_text['header'] }}</p>
 		@endif
 		@if (!empty($g1_text_text['content']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g1_text_text['content']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g1_text_text['content']), 24) !!}</p>
 		@endif
 		@if (!empty($g2_text_text['image']['ID']))
 		<figure class="acf-preview__media m-0">{!! wp_get_attachment_image($g2_text_text['image']['ID'], 'thumbnail', false, ['class' => 'h-20 w-32 object-contain']) !!}</figure>
@@ -31,7 +31,7 @@
 		<p class="text-h5">{{ $g2_text_text['header'] }}</p>
 		@endif
 		@if (!empty($g2_text_text['content']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g2_text_text['content']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g2_text_text['content']), 24) !!}</p>
 		@endif
 	</div>
 </div>

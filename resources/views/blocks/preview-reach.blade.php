@@ -19,7 +19,7 @@
 		<p class="text-h5">{{ $g_reach_1['header'] }}</p>
 		@endif
 		@if (!empty($g_reach_1['txt']))
-		<p>{{ wp_trim_words(wp_strip_all_tags($g_reach_1['txt']), 24) }}</p>
+		<p>{!! wp_trim_words(wp_strip_all_tags($g_reach_1['txt']), 24) !!}</p>
 		@endif
 		@if (!empty($g_reach_1['person']))
 		<p>{{ wp_strip_all_tags($g_reach_1['person']) }}</p>
